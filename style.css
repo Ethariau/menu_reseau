@@ -1,0 +1,168 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: cornflowerblue;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper
+{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.wrapper > div > *
+{
+    color: snow;
+    font-size: 20px;
+
+}
+.facebook, .linkedin, .codepen, .github
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.facebook
+{
+    background-color: royalblue;
+}
+.linkedin
+{
+
+    background-color: dodgerblue;
+}
+.github, .codepen
+{
+    background-color: black;
+}
+.fa-solid
+{
+    color: snow;
+    font-size: 25px;
+}
+.call, .message
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+}
+.call
+{
+    background-color: chartreuse;
+}
+.message
+{
+    background-color: deepskyblue;
+}
+.iconify
+{
+    width: 50px;
+    height: 50px;
+    background-color: snow;
+    border-radius: 50%;
+    position: absolute;
+    padding: 10px;
+   
+}
+.trait
+{
+    background-color: gray;
+    height: 3px;
+    width: 60%;
+    border-radius: 2px;
+    transform-origin: center;
+    position: absolute;
+    right: 10px;
+}
+.t1
+{
+    bottom: 35px;
+}
+.t2
+{
+    top: 50%;
+}
+.t3
+{
+    bottom: 10px;
+}
+.wrapper:hover .message
+{
+    left: 50px;
+    top: -40px;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+.wrapper:hover .call
+{
+    left: -40px;
+    top: -40px;
+    transition: 0.2s;
+}
+.wrapper:hover .codepen
+{
+    left: 60px;
+    top: 45px;
+    transition: 0.2s;
+    transition-delay: 0.4s;
+}
+.wrapper:hover .facebook
+{
+    top: 65px;
+    left: 27px;
+    transition: 0.2s;
+    transition-delay: 0.6s;
+}
+.wrapper:hover .linkedin
+{
+    top: 65px;
+    left: -8px;  
+    transition: 0.2s;
+    transition-delay: 0.8s;
+}
+.wrapper:hover .github
+{
+    left: -40px;
+    top: 45px;
+    transition: 0.2s;
+    transition-delay: 1s;
+}
+.iconify:hover .t2
+{
+    display: none;
+}
+.iconify:hover .t1
+{
+    transform: rotate(-45deg);
+    bottom: 50%;
+    left: 20%;
+    transition: 0.2s;
+}
+.iconify:hover .t3
+{
+    transform: rotate(45deg);
+    bottom: 50%;
+    left: 20%;
+    transition: 0.2s;
+}
